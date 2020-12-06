@@ -1,10 +1,10 @@
 const StackOverflowBadge = async (data) => {
     return `
-    <svg width="191" height="70" viewBox="0 0 191 70" xmlns="http://www.w3.org/2000/svg">
+    <svg width="168" height="21" viewBox="0 0 168 21" xmlns="http://www.w3.org/2000/svg">
     <g fill="none" fill-rule="evenodd">
-       <rect stroke="#4A4E51" fill="#2D2D2D" x=".5" y=".5" width="167" height="20" rx="5" />
+       <rect stroke="#4A4E51" fill="#000000" x=".5" y=".5" width="167" height="20" rx="5" />
        <text font-family="Arial-BoldMT, Arial" font-size="12" fill="#F2F2F3">
-          <tspan x="27" y="14">Rep ${data.reputation.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</tspan>
+          <tspan x="27" y="14">REP ${data.reputation.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</tspan>
        </text>
        <g transform="translate(93 3)" fill="#F1B600">
           <circle cx="3.5" cy="7.5" r="3.5" />
@@ -24,11 +24,11 @@ const StackOverflowBadge = async (data) => {
              <tspan x="9" y="11">${data.badge_counts.bronze}</tspan>
           </text>
        </g>
-       <g transform="translate(-55 3)" fill="#F1B600">
+       <g transform="translate(-68 3)" fill="#F1B600">
           <svg version="1.1" id="Layer_1"
              xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 21.18 21.93" style="enable-background:new 0 0 2.18 2.93;" xml:space="preserve">
+             viewBox="0 0 6.18 6.93" xml:space="preserve">
              <style type="text/css">
                 .st0{fill:#BCBBBB;}
                 .st1{fill:#F48021;}
