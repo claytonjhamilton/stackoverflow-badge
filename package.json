@@ -1,0 +1,24 @@
+{
+  "name": "stackoverflow-badge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claytonjhamilton/stackoverflow-badge.git"
+  },
+  "author": "Clayton Hamilton, PharmD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claytonjhamilton/stackoverflow-badge/issues"
+  },
+  "homepage": "https://github.com/claytonjhamilton/stackoverflow-badge#readme",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
+}
