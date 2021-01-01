@@ -2,7 +2,7 @@ const StackOverflowBadge = async (data) => {
     return `
     <svg width="168" height="21" viewBox="0 0 168 21" xmlns="http://www.w3.org/2000/svg">
     <g fill="none" fill-rule="evenodd">
-       <rect stroke="#4A4E51" fill="#000000" x=".5" y=".5" width="167" height="20" rx="5" />
+       <rect stroke="#4A4E51" fill="#000000" x=".5" y=".5" width="167" height="25" />
        <text font-family="Arial-BoldMT, Arial" font-size="12" fill="#F2F2F3">
           <tspan x="27" y="14">REP ${data.reputation.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</tspan>
        </text>
