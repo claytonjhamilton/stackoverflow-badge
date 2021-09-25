@@ -1,27 +1,28 @@
-const StackOverflowBadge = async (data) => {
-    return `
-    <svg width="168" height="21" viewBox="0 0 168 21" xmlns="http://www.w3.org/2000/svg">
+<svg width="168" height="21" viewBox="0 0 168 21" xmlns="http://www.w3.org/2000/svg">
     <g fill="none" fill-rule="evenodd">
        <rect stroke="#4A4E51" fill="#000000" x=".5" y=".5" width="167" height="25" />
        <text font-family="Arial-BoldMT, Arial" font-size="12" fill="#F2F2F3">
-          <tspan x="27" y="14">REP ${data.reputation.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</tspan>
+          <tspan x="27" y="14">REP {{ rep }}</tspan>
        </text>
        <g transform="translate(93 3)" fill="#F1B600">
           <circle cx="3.5" cy="7.5" r="3.5" />
           <text font-family="Arial-BoldMT, Arial" font-size="12">
-             <tspan x="9" y="11">${data.badge_counts.gold}</tspan>
+             <tspan x="9" y="11">{{ gold }}</tspan> 
+             <!-- gold -->
           </text>
        </g>
        <g transform="translate(118 3)" fill="#9A9B9E">
           <circle cx="3.5" cy="7.5" r="3.5" />
           <text font-family="Arial-BoldMT, Arial" font-size="12">
-             <tspan x="9" y="11">${data.badge_counts.silver}</tspan>
+             <tspan x="9" y="11">{{ silver }}</tspan>
+             <!-- silver -->
           </text>
        </g>
        <g transform="translate(142 3)" fill="#AB825F">
           <circle cx="3.5" cy="7.5" r="3.5" />
           <text font-family="Arial-BoldMT, Arial" font-size="12">
-             <tspan x="9" y="11">${data.badge_counts.bronze}</tspan>
+             <tspan x="9" y="11">{{ bronze }}</tspan>
+             <!-- bronze -->
           </text>
        </g>
        <g transform="translate(-68 3)" fill="#F1B600">
@@ -30,8 +31,8 @@ const StackOverflowBadge = async (data) => {
              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 6.18 6.93" xml:space="preserve">
              <style type="text/css">
-                .st0{fill:#BCBBBB;}
-                .st1{fill:#F48021;}
+                .st0#BCBBBB
+                .st1#F48021
              </style>
              <path class="st0" d="M3.53,4.49V3.17h0.44v1.77H0V3.17h0.44v1.33H3.53z"/>
              <path class="st1" d="M0.93,3.04l2.16,0.45l0.09-0.43L1.02,2.61L0.93,3.04z M1.21,2.01l2,0.93l0.18-0.4l-2-0.94
@@ -41,7 +42,3 @@ const StackOverflowBadge = async (data) => {
        </g>
     </g>
  </svg>
-    `;
-};
-
-module.exports = StackOverflowBadge;
