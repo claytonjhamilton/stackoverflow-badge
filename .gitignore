@@ -1,3 +1,4 @@
-.env
+.venv
 .vercel
 node_modules
+__pycache__
