@@ -6,7 +6,7 @@ from infrastructure import badge_cache
 
 async def StackUserRequestAsync(userID: str):
     userID = validate_input(userID)
-    
+
     if badge := badge_cache.get_badge(userID):
         return badge
 
@@ -25,9 +25,12 @@ async def StackUserRequestAsync(userID: str):
     silver = data["badge_counts"]["silver"]
     bronze = data["badge_counts"]["bronze"]
 
-    badge_cache.set_badge(userID,{"rep": rep, "gold": gold, "silver": silver, "bronze": bronze})
+    badge_cache.set_badge(
+        userID, {"rep": rep, "gold": gold, "silver": silver, "bronze": bronze}
+    )
 
     return {"rep": rep, "gold": gold, "silver": silver, "bronze": bronze}
+
 
 def validate_input(userID):
     if userID.isnumeric():
