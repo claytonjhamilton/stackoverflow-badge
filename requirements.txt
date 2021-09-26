@@ -1,6 +1,4 @@
 fastapi
 uvicorn
-requests
-aiofiles
-flask
 jinja2
+httpx

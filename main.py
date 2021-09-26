@@ -3,7 +3,7 @@ import uvicorn
 
 from api import stackoverflow_badges
 
-api = fastapi.FastAPI()
+api = fastapi.FastAPI(docs_url=None)
 
 def configure():
    configure_routing()
