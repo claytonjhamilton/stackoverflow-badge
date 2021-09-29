@@ -35,6 +35,6 @@ async def StackUserRequestAsync(userID: str):
 def validate_input(userID):
     if userID.isnumeric():
         return userID
-    else:
-        error = f"userID is invalid. Must be an integer."
-        raise ValidationError(status_code=400, error_msg=error)
+    raise ValidationError(
+        status_code=400, error_msg="userID is invalid. Must be an integer."
+    )
