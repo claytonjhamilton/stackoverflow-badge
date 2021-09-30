@@ -8,7 +8,7 @@ href="https://stackoverflow.com/users/14122375/hamiltonpharmd" target="_blank"><
 src="https://stackoverflow-badge.herokuapp.com/api/StackOverflowBadge/14122375" ></a>
 </p>
 <h2>Why</h2>
-<text>This repository is my experiment with setting up an API from scratch and serving data to end users.</text>
+<text>This repository is my experiment with setting up an API from scratch and serving data to end users. Along the way I was able to learn how to use GitHub Actions, write simple Python tests, and improve my understanding of FastAPI.</text>
 <h2>How to use</h2>
 <text>Update the following to include your StackOverflow UserID and embed in your GitHub profile's README or other markdown document:</text>
 
