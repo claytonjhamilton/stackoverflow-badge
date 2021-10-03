@@ -17,9 +17,8 @@ async def StackOverflowBadge(request: Request, userID: str):
         data_dict = await stackoverflow_service.StackUserRequestAsync(userID)
     except ValidationError as error:
         return fastapi.Response(
-            content=error.error_msg,
-            status_code=error.status_code
-            )
+            content=error.error_msg, status_code=error.status_code
+        )
     except Exception as x:
         return fastapi.Response(content=str(x), status_code=500)
     mimetypes.add_type("image/svg+xml", ".svg")
