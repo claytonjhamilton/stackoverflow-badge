@@ -1,26 +1,27 @@
 import pytest
-
-# import pytest_mock
 import httpx
+# import pytest_mock
+
 from services import stackoverflow_service
 
 
 def test_stackoverflow_service_active():
     """Check if URL is still active/up to date"""
-    assert httpx.get("https://api.stackexchange.com/").status_code == 200
+    assert httpx.get("https://api.stackexchange.com/docs").status_code == 200
 
 
-def test_validate_input():
+@pytest.fixture
+def user_test_ID():
+    return {"incorrectID": "a2d1d2", "correctID": "14122375"}
+
+
+def test_validate_input(user_test_ID):
     """Ensure userIDs are numeric strings and fail if not"""
-    userID = {"incorrectID": "a2d1d2", "correctID": "14122375"}
     with pytest.raises(Exception):
-        assert stackoverflow_service.validate_input(userID["incorrectID"])
+        assert stackoverflow_service.validate_input(
+            user_test_ID["incorrectID"]
+        )
     assert (
-        stackoverflow_service.validate_input(userID["correctID"]) == userID["correctID"]
+        stackoverflow_service.validate_input(user_test_ID["correctID"])
+        == user_test_ID["correctID"]
     )
-
-
-# def mock_response_object(code):
-#     resp = requests.Response()
-#     resp.status_code = code
-#     return resp
