@@ -1,14 +1,15 @@
-from models.validation_error import ValidationError
 import fastapi
+import mimetypes
 from starlette.templating import Jinja2Templates
 from starlette.requests import Request
+
 from services import stackoverflow_service
-import mimetypes
+from models.validation_error import ValidationError
 
 mimetypes.init()
 
 router = fastapi.APIRouter()
-templates = Jinja2Templates("templates")
+templates = Jinja2Templates("./templates")
 
 
 @router.get("/api/StackOverflowBadge/{userID}")
