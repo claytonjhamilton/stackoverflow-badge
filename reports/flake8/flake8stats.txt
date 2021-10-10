@@ -1,0 +1,24 @@
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_templates.py:3:17: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_templates.py:3:24: W292 no newline at end of file
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_badge_cache.py:3:17: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_badge_cache.py:3:24: W292 no newline at end of file
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_stackoverflow_badges.py:4:17: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_stackoverflow_badges.py:4:24: W292 no newline at end of file
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_validation_error.py:5:17: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_validation_error.py:5:24: W292 no newline at end of file
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/services/stackoverflow_service.py:33:80: E501 line too long (138 > 79 characters)
+1     E501 line too long (138 > 79 characters)
+4     E712 comparison to True should be 'if cond is True:' or 'if cond:'
+4     W292 no newline at end of file
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_badge_cache.py:3:17: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_badge_cache.py:3:24: W292 no newline at end of file
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_stackoverflow_badges.py:1:1: F401 'pytest' imported but unused
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_stackoverflow_badges.py:3:1: F401 'api.stackoverflow_badges' imported but unused
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_stackoverflow_badges.py:4:1: W391 blank line at end of file
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/tests/test_validation_error.py:1:1: F401 'pytest' imported but unused
+/Users/claytonhamilton/Code/GitHubRepos/stackoverflow-badge/services/stackoverflow_service.py:33:80: E501 line too long (138 > 79 characters)
+1     E501 line too long (138 > 79 characters)
+1     E712 comparison to True should be 'if cond is True:' or 'if cond:'
+3     F401 'pytest' imported but unused
+1     W292 no newline at end of file
+1     W391 blank line at end of file
