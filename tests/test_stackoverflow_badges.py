@@ -1,4 +1,4 @@
+import pytest
 
+import api.stackoverflow_badges
 
-def test_test():
-    assert True == True
