@@ -1,4 +1,3 @@
-import pytest
 from models.validation_error import ValidationError
 
 

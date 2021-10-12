@@ -30,7 +30,9 @@ async def StackUserRequestAsync(userID: str):
     if badge := badge_cache.get_badge(userID):
         return badge
 
-    url = f"https://api.stackexchange.com/2.3/users/{userID}?order=desc&sort=reputation&site=stackoverflow&filter=!LnOc*f7Nq.zHgKSZ9QN_vj"
+    url = f"https://api.stackexchange.com/2.3/users/{userID}"\
+        "?order=desc&sort=reputation&site=stackoverflow"\
+        "&filter=!LnOc*f7Nq.zHgKSZ9QN_vj"
 
     async with httpx.AsyncClient() as client:
         resp: Response = await client.get(url)
