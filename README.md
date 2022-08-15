@@ -19,7 +19,15 @@ src="https://stackoverflow-badge.herokuapp.com/api/StackOverflowBadge/14122375" 
 ```
 [![HamiltonPharmD StackOverflow](https://stackoverflow-badge.herokuapp.com/api/StackOverflowBadge/14122375)](https://stackoverflow.com/users/14122375/hamiltonpharmd)
 ```
-`python -m pytest --junitxml=reports/junit/junit.xml`
 
-`genbadge coverage --output-file ./reports/report_badges/coverage-badge.svg`
+<h2>Setting up your local environment to contribute</h2>
 
+1. Find an issue you're interested in resolving
+2. Fork and clone this repo
+3. Create a virtual environment
+4. Run `pip install -r dev-requirements.txt`
+5. Make changes
+6. To start the app run `uvicorn main:api`
+7. Open this address in your browser to view the badge: http://127.0.0.1:8000/api/StackOverflowBadge/14122375
+8. Review and confirm changes look good
+9. Submit changes as a PR
