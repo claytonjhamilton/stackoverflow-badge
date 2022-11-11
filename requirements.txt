@@ -11,6 +11,8 @@ httpcore==0.15.0
 httpx==0.23.0
 idna==3.4
 iniconfig==1.1.1
+Jinja2==3.1.2
+MarkupSafe==2.1.1
 mccabe==0.7.0
 packaging==21.3
 pluggy==1.0.0
