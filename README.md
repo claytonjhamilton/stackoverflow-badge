@@ -9,7 +9,7 @@
 <p align="center">
 <a
 href="https://stackoverflow.com/users/14122375/hamiltonpharmd" target="_blank"><img alt="StackOverflow user information"
-src="https://stackoverflow-badge.herokuapp.com/api/StackOverflowBadge/14122375" ></a>
+src="https://stackoverflow-badge.onrender.com/api/StackOverflowBadge/14122375" ></a>
 </p>
 <h2>Why</h2>
 <text>This repository is my experiment with setting up an API from scratch and serving data to end users. Along the way I was able to learn how to use GitHub Actions, write simple Python tests, and improve my understanding of FastAPI.</text>
@@ -17,7 +17,7 @@ src="https://stackoverflow-badge.herokuapp.com/api/StackOverflowBadge/14122375" 
 <text>Update the following to include your StackOverflow UserID and embed in your GitHub profile's README or other markdown document:</text>
 
 ```
-[![HamiltonPharmD StackOverflow](https://stackoverflow-badge.herokuapp.com/api/StackOverflowBadge/14122375)](https://stackoverflow.com/users/14122375/hamiltonpharmd)
+[![HamiltonPharmD StackOverflow](https://stackoverflow-badge.onrender.com/api/StackOverflowBadge/14122375)](https://stackoverflow.com/users/14122375/hamiltonpharmd)
 ```
 
 <h2>Setting up your local environment to contribute</h2>
