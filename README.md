@@ -1,8 +1,6 @@
 [![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 [![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](http://www.firsttimersonly.com/)
 ![example workflow](https://github.com/claytonjhamilton/stackoverflow-badge/actions/workflows/python-tests-action.yml/badge.svg)
-[![Tests Status](./reports/report_badges/tests-badge.svg?dummy=8484744)](./reports/junit/report.html)
-[![Coverage Status](./reports/report_badges/coverage-badge.svg?dummy=8484744)](./reports/coverage/index.html)
 [![Flake8 Status](./reports/report_badges/flake8-badge.svg?dummy=8484744)](./reports/flake8/index.html)
 
 <h1 align = "center">Display your stats with this unique StackOverflow Badge</h1>
@@ -30,4 +28,5 @@ src="https://stackoverflow-badge.onrender.com/api/StackOverflowBadge/14122375" >
 6. To start the app run `uvicorn main:api`
 7. Open this address in your browser to view the badge: http://127.0.0.1:8000/api/StackOverflowBadge/14122375
 8. Run tests using from project root dir `python -m pytest tests/` and ensure all pass
-9. Submit changes as a PR
+9. Update flake8 badge `genbadge flake8 --output-file ./reports/report_badges/flake8-badge.svg`
+10. Submit changes as a PR
