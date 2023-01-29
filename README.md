@@ -26,8 +26,8 @@ src="https://stackoverflow-badge.onrender.com/api/StackOverflowBadge/14122375" >
 2. Fork and clone this repo
 3. Create a virtual environment
 4. Run `pip install -r dev-requirements.txt`
-5. Make changes
+5. Complete code edits
 6. To start the app run `uvicorn main:api`
 7. Open this address in your browser to view the badge: http://127.0.0.1:8000/api/StackOverflowBadge/14122375
-8. Review and confirm changes look good
+8. Run tests using from project root dir `python -m pytest tests/` and ensure all pass
 9. Submit changes as a PR
