@@ -1,8 +1,5 @@
 import pytest
 import httpx
-
-# import pytest_mock
-
 from services import stackoverflow_service
 
 
@@ -26,3 +23,33 @@ def test_validate_input(user_test_ID):
         stackoverflow_service.validate_input(user_test_ID["correctID"])
         == user_test_ID["correctID"]
     )
+
+
+def test_format_api_output():
+    # Test input data
+    response = {
+        "items": [
+            {
+                "reputation": 123,
+                "badge_counts": {
+                    "gold": 3,
+                    "silver": 5,
+                    "bronze": 10,
+                },
+            },
+        ],
+    }
+
+    # Expected output
+    expected_output = {
+        "rep": 123,
+        "gold": 3,
+        "silver": 5,
+        "bronze": 10,
+    }
+
+    # Test function
+    output = stackoverflow_service.format_api_output(response)
+
+    # Assert output matches expected output
+    assert output == expected_output
