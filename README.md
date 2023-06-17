@@ -23,7 +23,7 @@ src="https://stackoverflow-badge.onrender.com/api/StackOverflowBadge/14122375" >
 1. Find an issue you're interested in resolving
 2. Fork and clone this repo
 3. Create a virtual environment
-4. Run `pip install -r dev-requirements.txt`
+4. Run `pip install -r requirements.txt`
 5. Complete code edits
 6. To start the app run `uvicorn main:api`
 7. Open this address in your browser to view the badge: http://127.0.0.1:8000/api/StackOverflowBadge/14122375
